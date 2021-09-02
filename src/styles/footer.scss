@@ -1,0 +1,52 @@
+@import "general.scss";
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template:
+    "logo tel a1 m"
+    "copy email a2 m"
+    "pol soc a3 m"
+}
+
+.footer--logo {
+    grid-area: logo;
+}
+
+.footer__p--copyright {
+    grid-area: copy;
+}
+
+.footer__p--policy {
+    grid-area: pol;
+}
+
+.footer__p--tel {
+    grid-area: tel;
+}
+
+.footer--email {
+    grid-area: email;
+}
+
+.footer__socials {
+    grid-area: soc;
+}
+
+.footer__link--1 {
+    grid-area: a1;
+}
+
+.footer__link--2 {
+    grid-area: a2;
+}
+
+.footer__link--3 {
+    grid-area: a3;
+}
+
+.footer_mailing {
+    grid-area: m;
+}

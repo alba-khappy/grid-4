@@ -1,0 +1,46 @@
+@import "general.scss";
+
+.header {
+    padding: 50px 0;
+}
+
+.header--nav {
+    display: grid;
+    grid-template-columns: 150px 1fr auto;
+}
+
+.header__a {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__li--img:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header__ul {
+    display: flex;
+    align-items: center;
+}
+
+.header__a--enter {
+    background-image: url('../images/enter.svg');
+    background-repeat: no-repeat;
+}
+
+.header__a--like {
+    background-image: url('../images/like.svg');
+    background-repeat: no-repeat;
+}
+
+.header__a--bag {
+    background-image: url('../images/bag.svg');
+    background-repeat: no-repeat;
+}
+
+.header__li--link:not(:last-child) {
+    margin-right: 30px;
+}
