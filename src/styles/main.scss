@@ -35,14 +35,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
-    row-gap: 76px;
+    row-gap: 50px;
     padding-bottom: 100px;
+    grid-template-rows: repeat(3, 1fr) 180px;
 }
 
 .catalog__article {
     display: grid;
     width: 320px;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px auto;
     grid-template-areas:
         "img img"
         "h3 like"
@@ -50,6 +52,7 @@
 }
 
 .catalog__h3 {
+    align-self: center;
     grid-area: h3;
     font-size: 16px;
 }
@@ -73,6 +76,7 @@
 
 .article__button {
     grid-column: -1/1;
+    align-self: center;
     min-width: 320px;
     justify-self: center;
     padding: 27px 0;
